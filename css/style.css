@@ -1,0 +1,87 @@
+.modal-progress {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.1);
+}
+
+.progress-wrapper {
+	width: 300px;
+	height: 126px;
+	border: 1px solid #808080;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -63px 0 0 -150px;
+	z-index: 2;
+	background-color: #FFF;
+}
+
+.progress-wrapper .progress-header {
+	background: #808080;
+	color: #FFF;
+	padding: 5px;
+}
+
+.progress-wrapper .progress-header span {
+	margin: 0;
+	line-height: 20px;
+	color: #DDD;
+}
+
+.progress-wrapper .progress-header a {
+	float: right;
+	background-image: url('../images/close.png');
+	background-color: #CFCFCF;
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 12px 12px;
+}
+
+.progressbar-wrapper {
+	width: 50%;
+	margin: 20px auto;
+	height: 17px;
+	border: 1px solid #DDD;
+}
+
+.progressbar {
+	width: 0;
+	height: 15px;
+	background: -webkit-linear-gradient(#7fc9ff, #4c7999); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#7fc9ff, #4c7999); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#7fc9ff, #4c7999); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#7fc9ff, #4c7999); /* Standard syntax */
+}
+
+.progressbar.complete {
+	background: -webkit-linear-gradient(#7fc900, #508000); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#7fc900, #508000); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#7fc900, #508000); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#7fc900, #508000); /* Standard syntax */
+}
+
+.progress-text {
+	padding: 0 10px;
+	text-align: center;
+}
+
+.progress-text label {
+	color: #808080;
+}
+
+.progress-text .complete {
+	background-image: url('../images/completed.png');
+	width: 20px;
+	height: 20px;
+	border-radius: 20px;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding-right: 25px;
+}
