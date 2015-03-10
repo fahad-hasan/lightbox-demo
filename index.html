@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+	<div class="container">
+		<form class="navbar-form navbar-left" role="search">
+			<button type="button" id="reset" class="btn btn-default">Restart</button>
+	  </form>
+    <div class="row">
+      <div class="col-md-12">
+        <ul>
+          <li>Please close (X) the progress box and click the 'Restart' button to see the animation again.</li>
+          <li>JSON object 'total' must be > 0 in order to run the animation</li>
+          <li>The animation with take start, finish and duration from JSON</li>
+          <li>It is possible to start the progressbar from a certain value, i.e 20% instead of 0 based on the JSON</li>
+          <li>It is possible to finish the progressbar at a certain value i.e 80% instead of 100%, in that case, it will not be complete</li>
+          <li>Only 100% progress will trigger the green tick icon and modified text</li>
+        </ul>
+      </div>
+    </div>
+	</div>
+
+	<div class="modal-progress">
+		<div class="progress-wrapper">
+			<div class="progress-header">
+				<span>Progress</span>
+				<a href="#"></a>
+			</div>
+			<div class="progress-body">
+				<div class="progressbar-wrapper">
+					<div class="progressbar" style="width: 0%;"></div>
+				</div>
+				<div class="progress-text">
+					<span>Progress 50%</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/progress.js"></script>
+  </body>
+</html>
